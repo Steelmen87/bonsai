@@ -22,7 +22,7 @@ export const Header = () => {
         </StyledWrapper>
     );
 };
-const StyledApp = styled.img`
+const StyledApp = styled.div`
     background-color: #F2FAFF;
     border-radius: 94px;
     height: 700px;
@@ -32,7 +32,7 @@ const StyledApp = styled.img`
     position: absolute;
     content: "";
     top: -300px;
-    right: 0px;
+    right: 0;
 `
 const StyledWrapper = styled.div`
     max-width: 1180px;
@@ -48,7 +48,7 @@ const StyleHeader = styled.header`
 type LogoProps = {
     img: any
 }
-const Logo = styled.img<LogoProps>`
+const Logo = styled.image<LogoProps>`
     background-image: url(${props => props.img});
     background-position: center;
     background-repeat: no-repeat;
@@ -57,6 +57,7 @@ const Logo = styled.img<LogoProps>`
     height: 31px;
     margin-right: 518px;
     margin-bottom: 11px;
+    border: none;
 `
 const BlockMenuButton = styled.div`
 
@@ -72,11 +73,11 @@ const Menu = styled.div`
 type  TabProps = {
     tab: any
 }
-const Tab = styled.img<TabProps>`
+const Tab = styled.image<TabProps>`
     position: absolute;
     content: "";
     top: 12px;
-    right: -10px;
+    right: -12px;
     background-image: url(${props => props.tab});
     height: 7px;
     width: 7px;
