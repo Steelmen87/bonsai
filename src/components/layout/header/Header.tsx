@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import logoImg from "../../../assets/image/logo.png";
 import tab from "../../../assets/image/Frame.png";
+import {StyledApp} from "../styledApp/StyledApp.tsx";
 
 export const Header = () => {
     return (
@@ -22,20 +23,11 @@ export const Header = () => {
         </StyledWrapper>
     );
 };
-const StyledApp = styled.div`
-    background-color: #F2FAFF;
-    border-radius: 94px;
-    height: 700px;
-    width: 700px;
-    transform: rotate(-25deg);
-    z-index: -1;
-    position: absolute;
-    content: "";
-    top: -300px;
-    right: 0;
-`
+
 const StyledWrapper = styled.div`
-    max-width: 1180px;
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
     width: 100%;
 `
 const StyleHeader = styled.header`

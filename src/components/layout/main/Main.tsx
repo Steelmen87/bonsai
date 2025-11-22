@@ -57,6 +57,7 @@ const StyledText = styled.span`
 
 `
 const BlockForm = styled.form`
+    margin-left: 130px;
     width: 500px;
     height: 430px;
     margin-bottom: 100px;

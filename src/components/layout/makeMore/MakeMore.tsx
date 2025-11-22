@@ -1,9 +1,12 @@
 import styled from "styled-components";
 import without from "../../../assets/image/1.png"
-import withO  from "../../../assets/image/2.png"
+import withO from "../../../assets/image/2.png"
+import {StyledApp} from "../styledApp/StyledApp.tsx";
+
 export const MakeMore = () => {
     return (
         <StyledMakeMore>
+            <StyledApp right={"1140px"} top={"300px"}/>
             <BlockText>
                 <Title>
                     Make more, manage less
@@ -37,12 +40,13 @@ const Process = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     width: 480px;
     height: 423px;
     //border: 1px solid;
 `
 type ImgProps = {
-    img:any
+    img: any
 }
 
 const Image = styled.image<ImgProps>`
@@ -87,11 +91,12 @@ const Description = styled.h2`
     text-align: center;
 
     color: #4C4D5FA8;
-    padding-top: 20px; 
+    padding-top: 20px;
 
 `
 const StyledMakeMore = styled.div`
-    max-width: 1114px;
+    position: relative;
+    max-width: 1440px;
     width: 100%;
     display: flex;
     flex-direction: column;

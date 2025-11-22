@@ -57,6 +57,7 @@ body {
 
     display: flex;
     justify-content: center;
+    /*background: rgba(237, 237, 239, 0.66);*/
 }
 
 h1 {
